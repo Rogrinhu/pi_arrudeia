@@ -67,8 +67,8 @@ O Arrudeia prioriza trajetos feitos a pé, promovendo uma experiência mais sust
 Exemplo:
 
 ```bash
-git clone https://github.com/seuusuario/arrudeia.git
-cd arrudeia
+git clone https://github.com/Rogrinhu/pi_arrudeia.git
+cd pi_arrudeia
 npm install
 npm start
 ```
