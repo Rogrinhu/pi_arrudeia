@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrudeia - Roteiros em Recife</title>
+  <script src="js/script_feed.js" defer></script>
+  <link rel="stylesheet" href="css/feed.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Botão de tema -->
+  <button class="theme-toggle" aria-label="Alternar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img href="home.html" src="assets/logo_amarelo.png" alt="Arrudeia" />
+      </div>
+      <nav class="nav">
+        <a href="home.html">Início</a>
+        <a href="#">Locais</a>
+        <a href="#" class="active">Roteiros</a>
+        <a href="#">Guias</a>
+        <a href="#">Eventos</a>
+      </nav>
+      <div class="user">
+        <a href="login.html" class="user-name">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="container">
+      <!-- Feed -->
+      <section class="feed-section">
+        <!-- Formulário de Post -->
+        <div class="post-form">
+          <textarea placeholder="Compartilhe seu roteiro em Recife..."></textarea>
+          
+          <div class="media-upload" id="mediaUpload">
+            <div class="upload-area" id="uploadArea">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Arraste uma imagem ou vídeo aqui, ou clique para selecionar</p>
+              <input type="file" accept="image/*,video/*" id="mediaInput" hidden />
+            </div>
+            <div class="media-preview" id="mediaPreview"></div>
+          </div>
+
+          <div class="post-actions">
+            <button class="btn-clear-media" id="btnClearMedia" style="display:none;">
+              <i class="fas fa-times"></i> Remover
+            </button>
+            <button class="btn-publish">Publicar</button>
+          </div>
+        </div>
+
+        <!-- Espaçamento entre formulário e posts -->
+        <div class="posts-gap"></div>
+
+        <!-- Posts -->
+        <div class="posts" id="postsContainer">
+          <!-- Post 1 -->
+          <article class="post" data-views="42" data-ratings='[5,4,5,3]' data-total-ratings="4">
+            <div class="post-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Costa" class="avatar" />
+              <div>
+                <h4>Ana Costa</h4>
+                <span class="time">2h atrás</span>
+              </div>
+              <div class="rating-display">
+                <span class="rating-average">4.3</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="post-text">
+              Roteiro imperdível: comece no Paço do Frevo, almoce no Mercado de São José, termine no Cais do Sertão. Recife é pura cultura!
+            </p>
+            <div class="post-media">
+              <img src="https://picsum.photos/600/400?random=1" alt="Roteiro em Recife" />
+            </div>
+            <div class="post-stats">
+              <span class="views"><i class="fas fa-eye"></i> 42 visualizações</span>
+            </div>
+
+            <!-- Avaliação -->
+            <div class="rating-input">
+              <span>Avalie:</span>
+              <div class="star-rating">
+                <i class="far fa-star" data-value="1"></i>
+                <i class="far fa-star" data-value="2"></i>
+                <i class="far fa-star" data-value="3"></i>
+                <i class="far fa-star" data-value="4"></i>
+                <i class="far fa-star" data-value="5"></i>
+              </div>
+            </div>
+
+            <!-- Comentários -->
+            <div class="comments-section">
+              <div class="comment-form">
+                <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                <button class="btn-comment">Comentar</button>
+              </div>
+              <div class="comments-list"></div>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="post" data-views="28" data-ratings='[3,5]' data-total-ratings="2">
+            <div class="post-header">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="João Silva" class="avatar" />
+              <div>
+                <h4>João Silva</h4>
+                <span class="time">5h atrás</span>
+              </div>
+              <div class="rating-display">
+                <span class="rating-average">4.0</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="post-text">
+              Dica de ouro: pegue o catamarã no Cais do Sertão e veja o pôr do sol no Rio Capibaribe. Imperdível!
+            </p>
+            <div class="post-media">
+              <video controls>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+              </video>
+            </div>
+            <div class="post-stats">
+              <span class="views"><i class="fas fa-eye"></i> 28 visualizações</span>
+            </div>
+
+            <div class="rating-input">
+              <span>Avalie:</span>
+              <div class="star-rating">
+                <i class="far fa-star" data-value="1"></i>
+                <i class="far fa-star" data-value="2"></i>
+                <i class="far fa-star" data-value="3"></i>
+                <i class="far fa-star" data-value="4"></i>
+                <i class="far fa-star" data-value="5"></i>
+              </div>
+            </div>
+
+            <div class="comments-section">
+              <div class="comment-form">
+                <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                <button class="btn-comment">Comentar</button>
+              </div>
+              <div class="comments-list"></div>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="post" data-views="15" data-ratings='[5,5,4]' data-total-ratings="3">
+            <div class="post-header">
+              <img src="assets/cabloco.png" alt="Cabloco" class="avatar" />
+              <div>
+                <h4>Cabloco</h4>
+                <span class="time">1 dia atrás</span>
+              </div>
+              <div class="rating-display">
+                <span class="rating-average">4.7</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="post-text">
+              Explore o Recife Antigo a pé! Comece na Rua do Bom Jesus, passe pela Sinagoga Kahal Zur Israel e termine na Praça do Marco Zero. História viva!
+            </p>
+            <div class="post-media">
+              <img src="assets/mapa-recife.png" alt="Mapa do Recife Antigo" />
+            </div>
+            <div class="post-stats">
+              <span class="views"><i class="fas fa-eye"></i> 15 visualizações</span>
+            </div>
+
+            <div class="rating-input">
+              <span>Avalie:</span>
+              <div class="star-rating">
+                <i class="far fa-star" data-value="1"></i>
+                <i class="far fa-star" data-value="2"></i>
+                <i class="far fa-star" data-value="3"></i>
+                <i class="far fa-star" data-value="4"></i>
+                <i class="far fa-star" data-value="5"></i>
+              </div>
+            </div>
+
+            <div class="comments-section">
+              <div class="comment-form">
+                <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                <button class="btn-comment">Comentar</button>
+              </div>
+              <div class="comments-list"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Tópicos em Alta</h3>
+          <div class="tags">
+            <a href="#" class="tag">#Gastronomia</a>
+            <a href="#" class="tag">#Cultura</a>
+            <a href="#" class="tag">#Praias</a>
+            <a href="#" class="tag">#História</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Eventos Próximos</h3>
+          <div class="events">
+            <div class="event">
+              <div class="event-date">
+                <span class="day">18</span>
+                <span class="month">Jan</span>
+              </div>
+              <div class="event-info">
+                <h4>Festa Junina no Bairro do Recife</h4>
+                <p>19h • Entrada gratuita</p>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event-date">
+                <span class="day">22</span>
+                <span class="month">Jan</span>
+              </div>
+              <div class="event-info">
+                <h4>Show de Forró no Marco Zero</h4>
+                <p>20h • R$ 30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+            <img src="assets/logo_amarelo.png" alt="Arrudeia" class="footer-logo-img">
+            </div>
+        <div class="social">
+            <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+ 
+  <nav class="footer-links container">
+<a href="#">Sobre</a>
+<a href="#">Autores</a>
+<a href="#">Arquivos</a>
+<a href="#">Termos e Condições</a>
+<a href="#">Políticas e Cookies</a>
+</nav>
+</footer>
+ 
+</body>
+</html>
