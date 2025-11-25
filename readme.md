@@ -6,7 +6,7 @@ Arrudeia é um aplicativo de turismo urbano focado em ampliar a conexão de turi
 
 ## Visão Geral
 
-O objetivo do Arrudeia é tornar o turismo urbano mais acessível, imersivo e autêntico, permitindo que cada usuário explore a cidade de acordo com seus interesses, necessidades e ritmo. A plataforma conecta guias locais a pessoas que desejam vivências culturais mais ricas, estimulantes e enriquecedoras.
+O objetivo do Arrudeia é tornar o turismo urbano mais acessível, imersivo e autêntico, permitindo que cada usuário explore a cidade de acordo com seus interesses, necessidades e ritmo. A plataforma conecta guias locais a pessoas que desejam vivências culturais personalizadas, estimulantes e enriquecedoras.
 
 ---
 
