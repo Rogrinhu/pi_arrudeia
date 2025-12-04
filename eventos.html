@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrudeia - Feed de Roteiros</title>
+    <script src="js/script_feed.js" defer></script>
+    <link rel="stylesheet" href="css/eventos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/logo colorida 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo colorida 1.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Botão de tema -->
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/logo-arrudeia.png" style="height: 80px; width: auto;" alt="Arrudeia" class="logo-img">
+                <span class="logo-text"><img src="assets/arrudeia_branco.png" alt="logo" style="width: 100px;"></span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="feed.html" class="nav-link">ROTEIROS</a>
+                <a href="guias.html" class="nav-link">GUIAS</a>
+                <a href="eventos.html" class="nav-link active">EVENTOS</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+            </nav>
+            <div class="user">
+                <a href="login.html">
+                    <img src="assets/user-avatar.png" style="width: auto; height: 50px;" alt="User" class="user-avatar">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            <!-- Posts -->
+            <div class="posts" id="postsContainer">
+                <!-- Post 1 -->
+                <article class="post" data-views="42" data-ratings='[5,4,5,3]' data-total-ratings="4">
+                    <div class="post-header">
+                        <img src="assets/recinplay_logo.png" alt="REC’n’Play" class="avatar" />
+                        <div>
+                            <h4>REC’n’Play</h4>
+                            <span class="time">2h atrás</span>
+                        </div>
+                        <div class="rating-display">
+                            <span class="rating-average">4.3</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        O REC’n’Play 2025, maior festival de tecnologia, inovação e cultura do Brasil, acontece de 15 a
+                        18 de outubro no Bairro do Recife (PE). Totalmente gratuito, traz o tema “O Futuro Feito por
+                        Gente”, mais de 700 atividades (palestras, workshops, shows, games e networking) e reúne
+                        estudantes, empreendedores e curiosos. Inscrições já abertas em recnplay.pe! 🚀
+                    </p>
+                    <div class="post-media">
+                        <img src="assets/recinplay.png" alt="Roteiro em Recife" />
+                    </div>
+                    <div class="post-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 42 visualizações</span>
+                    </div>
+
+                    <!-- Avaliação -->
+                    <div class="rating-input">
+                        <span>Avalie:</span>
+                        <div class="star-rating">
+                            <i class="far fa-star" data-value="1"></i>
+                            <i class="far fa-star" data-value="2"></i>
+                            <i class="far fa-star" data-value="3"></i>
+                            <i class="far fa-star" data-value="4"></i>
+                            <i class="far fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Comentários -->
+                    <div class="comments-section">
+                        <div class="comment-form">
+                            <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                            <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                            <button class="btn-comment">Comentar</button>
+                        </div>
+                        <div class="comments-list"></div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post" data-views="28" data-ratings='[3,5]' data-total-ratings="2">
+                    <div class="post-header">
+                        <img src="assets/governo-de-pernambuco-logo.png" alt="Governo de Pernambuco" class="avatar" />
+                        <div>
+                            <h4>Governo de Pernambuco</h4>
+                            <span class="time">5h atrás</span>
+                        </div>
+                        <div class="rating-display">
+                            <span class="rating-average">4.0</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        14 a 18 de fevereiro • Recife e Olinda (PE). O maior carnaval do mundo explode com maracatu,
+                        frevo, bonecos gigantes e blocos icônicos como o Galo da Madrugada, atraindo milhões de foliões
+                        em uma celebração gratuita das raízes culturais pernambucanas, com desfiles, shows e ritmos
+                        24h/dia por 5 dias intensos de folia democrática e colorida. Info: recife.pe.gov.br 🎭
+                    </p>
+                    <div class="post-media">
+                        <img src="assets/carnaval.jpg" alt="Carnaval" />
+                    </div>
+                    <div class="post-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 28 visualizações</span>
+                    </div>
+
+                    <div class="rating-input">
+                        <span>Avalie:</span>
+                        <div class="star-rating">
+                            <i class="far fa-star" data-value="1"></i>
+                            <i class="far fa-star" data-value="2"></i>
+                            <i class="far fa-star" data-value="3"></i>
+                            <i class="far fa-star" data-value="4"></i>
+                            <i class="far fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-form">
+                            <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                            <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                            <button class="btn-comment">Comentar</button>
+                        </div>
+                        <div class="comments-list"></div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post" data-views="15" data-ratings='[5,5,4]' data-total-ratings="3">
+                    <div class="post-header">
+                        <img src="assets/prefeitura-de-recife-logo.jpg" alt="Prefeitura de Pernambuco" class="avatar" />
+                        <div>
+                            <h4>Prefeitura de Recife</h4>
+                            <span class="time">1 dia atrás</span>
+                        </div>
+                        <div class="rating-display">
+                            <span class="rating-average">4.7</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        27, 28 e 31/dezembro • Praia do Pina (Boa Viagem), Recife (PE). O maior réveillon do Nordeste transforma a beira-mar em uma festa épica e gratuita de três dias, com queima de fogos monumental, shows nacionais e locais a partir das 19h, mesclando pop, forró, sertanejo e ritmos pernambucanos para mais de 1 milhão de pessoas, impulsionando R$ 350 milhões na economia local e reforçando o modelo sustentável custeado por patrocinadores privados. Programação: 27/12 - Gusttavo Lima, Natanzinho, João Gomes, Zé Vaqueiro; 28/12 - Anitta, Xand Avião, Raphaela Santos, Priscila Senna, PV Calado; 31/12 - Wesley Safadão, Matheus & Kauan, Alceu Valença, Lipe, Matheus Moraes. Áreas VIP pagas com open bar e camarotes; acessível de graça na areia. Info: recife.pe.gov.br ou viradanapraiarecife.com 🎆
+                    </p>
+                    <div class="post-media">
+                        <video src="assets/video-virada.mp4" controls></video>
+                    </div>
+                    <div class="post-stats">
+                        <span class="views"><i class="fas fa-eye"></i> 15 visualizações</span>
+                    </div>
+
+                    <div class="rating-input">
+                        <span>Avalie:</span>
+                        <div class="star-rating">
+                            <i class="far fa-star" data-value="1"></i>
+                            <i class="far fa-star" data-value="2"></i>
+                            <i class="far fa-star" data-value="3"></i>
+                            <i class="far fa-star" data-value="4"></i>
+                            <i class="far fa-star" data-value="5"></i>
+                        </div>
+                    </div>
+
+                    <div class="comments-section">
+                        <div class="comment-form">
+                            <img src="assets/cabloco.png" alt="Você" class="avatar-small" />
+                            <input type="text" placeholder="Escreva um comentário..." class="comment-input" />
+                            <button class="btn-comment">Comentar</button>
+                        </div>
+                        <div class="comments-list"></div>
+                    </div>
+                </article>
+            </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="card">
+                    <h3>Tópicos em Alta</h3>
+                    <div class="tags">
+                        <a class="tag">Gastronomia</a>
+                        <a class="tag">Cultura</a>
+                        <a class="tag">Praias</a>
+                        <a class="tag">História</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Eventos Próximos</h3>
+                    <div class="events">
+                        <div class="event">
+                            <div class="event-date">
+                                <span class="day">15-18</span>
+                                <span class="month">out</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>REC’n’Play 2025</h4>
+                                <p>Bairro do Recife • Entrada gratuita</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-date">
+                                <span class="day">04</span>
+                                <span class="month">dez</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Zé Lezin em Recife</h4>
+                                <p>Classic Hall • A partir de R$180</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-date">
+                                <span class="day">06</span>
+                                <span class="month">dez</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Festival Forró e Mulher</h4>
+                                <p>Recife • Vendas em breve</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-date">
+                                <span class="day">13</span>
+                                <span class="month">dez</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Natal da Musa</h4>
+                                <p>Recife • Vendas em breve</p>
+                            </div>
+                        </div>
+
+                        <div class="event">
+                            <div class="event-date">
+                                <span class="day">27-31</span>
+                                <span class="month">dez</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Virada na Praia</h4>
+                                <p>Recife 2026 • A partir de R$460</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo-arrudeia.png" alt="Arrudeia" class="footer-logo-img">
+            </div>
+            <div class="social">
+                <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <nav class="footer-links container">
+            <a href="#">Sobre</a>
+            <a href="#">Autores</a>
+            <a href="#">Arquivos</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Políticas e Cookies</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

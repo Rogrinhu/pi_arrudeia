@@ -1,12 +1,12 @@
 # Arrudeia
 
-Arrudeia é um aplicativo de turismo urbano focado em ampliar a conexão de turistas e moradores com os espaços da cidade. O projeto incentiva a caminhabilidade, valoriza a cultura local e oferece experiências personalizadas por meio de roteiros criados por guias diversos.
+Arrudeia é um aplicativo de turismo urbano focado em promover a reconexão de turistas e moradores com os espaços da cidade. O projeto incentiva a caminhabilidade, valoriza a cultura local e oferece experiências personalizadas por meio de roteiros criados por guias certificados.
 
 ---
 
 ## Visão Geral
 
-O objetivo do Arrudeia é tornar o turismo urbano mais acessível, imersivo e autêntico, permitindo que cada usuário explore a cidade de acordo com seus interesses, necessidades e ritmo. A plataforma conecta guias locais a pessoas que desejam vivências culturais personalizadas, estimulantes e enriquecedoras.
+O objetivo do Arrudeia é tornar o turismo urbano mais acessível, imersivo e autêntico, permitindo que cada usuário explore a cidade de acordo com seus interesses, necessidades e ritmo. A plataforma conecta guias locais a pessoas que desejam vivências culturais mais ricas, informativas e responsáveis.
 
 ---
 
@@ -14,19 +14,19 @@ O objetivo do Arrudeia é tornar o turismo urbano mais acessível, imersivo e au
 
 ### Cadastro de Guias Locais
 
-Guias turísticos podem se registrar na plataforma e criar roteiros únicos e personalizados, compartilhando seus próprios conhecimentos sobre a história, cultura e cotidiano da cidade.
+Guias turísticos podem se registrar na plataforma e criar roteiros exclusivos, compartilhando conhecimento profundo sobre a história, cultura e cotidiano da cidade.
 
 ### Roteiros Personalizados
 
 O usuário pode explorar e filtrar roteiros com base em:
 
-* Interesses: cultura, gastronomia, história, vida noturna, natureza, arquitetura, entre outros;
+* Interesses: cultura, gastronomia, história, vida noturna, natureza, entre outros;
 * Perfil pessoal: família, aventureiro, relaxamento, acessibilidade;
 * Regiões ou pontos de interesse específicos.
 
 ### Acessibilidade
 
-A plataforma oferece roteiros adaptados para diferentes níveis de mobilidade, traçando rotas que facilitam o acesso a todos, garantindo inclusão e segurança para todos os usuários.
+A plataforma oferece roteiros adaptados para diferentes níveis de mobilidade, garantindo inclusão e segurança para todos os usuários.
 
 ### Suporte Multilíngue
 

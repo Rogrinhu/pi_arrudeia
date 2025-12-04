@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrudeia - Parcerias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/parcerias.css" />
+  
+  <script src="js/script_feed.js" defer></script>
+</head>
+<body>
+
+  <button class="theme-toggle" aria-label="Alternar tema escuro">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- HEADER-->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="logo colorida 1.png" alt="Arrudeia">
+      </a>
+      
+      <nav class="nav">
+        <a href="index.html">INÍCIO</a>
+        <a href="#">LOCAIS</a>
+        <a href="#" class=>ROTEIROS</a>
+        <a href="#">GUIAS</a>
+        <a href="#">EVENTOS</a>
+      </nav>
+      
+      <div class="user">
+        <a href="login.html" class="user-name">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>PARCERIAS</h1>
+
+    <!--PARCEIROS -->
+    <section class="partners-grid">
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+      <article class="partner-card">
+        <div class="card-top"><span>Logo</span></div>
+        <div class="card-bottom">
+          <h3>EMPRESA PARCEIRA</h3>
+          <p>DESCRIÇÂO DA EMPRESA PARCEIRA.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="partner-form">
+          <h2>CADASTRE-SE COMO NOSSA PARCEIRA PARA DIVULGAR SEUS EVENTOS E TER ACESSO A BENEFÍCIOS EXCLUSIVOS</h2>
+          <button class="submit-btn">FALE CONOSCO</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt=""></a>
+          <a href="#" aria-label="YouTube"><img src="icons/youtube.svg" alt=""></a>
+        </div>
+        <nav class="footer-menu">
+          <a href="#">Sobre nós</a>
+          <a href="#">Autores</a>
+          <a href="#">Termos e Condições</a>
+          <a href="#">Política de Cookies</a>
+            <a href="parcerias.html">Parcerias</a>
+        </nav>
+        <div class="logo-text"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TEMA -->
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const icon = toggle.querySelector('i');
+    const root = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.setAttribute('data-theme', 'dark');
+      icon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    toggle.addEventListener('click', () => {
+      if (root.hasAttribute('data-theme')) {
+        root.removeAttribute('data-theme');
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -45,7 +45,7 @@ main{
     width: 974px;
     height: 974px;
     float: left;
-    background-image: url('assets/lateral.png');
+    background-image: url('../assets/lateral.png');
 }
 .bk img{
     max-width: auto;
