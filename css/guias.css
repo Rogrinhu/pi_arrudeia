@@ -306,7 +306,7 @@
   margin: auto;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1700px) {
     .guias-painel {
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
