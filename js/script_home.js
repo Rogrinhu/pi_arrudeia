@@ -103,7 +103,7 @@ const atividades = [
         star.innerHTML = '♡';
       }
   }
-  
+
   // Criar card
   function criarCard(atividade) {
     const card = document.createElement('div');

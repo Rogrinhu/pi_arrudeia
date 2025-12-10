@@ -512,6 +512,7 @@ body {
     background: linear-gradient(135deg, #8B5CF6, #EC4899);
 }
 
+/* Footer */
 .footer {
     background: var(--primary);
     color: white;
@@ -519,23 +520,42 @@ body {
     margin-top: 4rem;
 }
 
-/* Container interno */
-.footer-content {
+.footer-logo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
-/* Logo no footer */
 .footer-logo-img {
     height: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer-patrocinadores {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-patrocinadores-senac {
+    height: 60px;
+    margin: 0 15px;
+}
+
+.footer-patrocinadores-serasa-experian {
+    height: 60px;
+    margin: 0 15px;
+}
+
+.footer-patrocinadores-gerando-falcoes {
+    height: 40px;
+    margin: 0 15px;
 }
 
 /* Ícones de redes sociais */
 .social {
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 .social img {
@@ -555,18 +575,13 @@ body {
     padding: 0.5rem 0;
 }
 
-.footer-links a {
+.footer-links p {
     color: #bbd4f7;
     text-decoration: none;
     transition: color 0.3s ease;
     white-space: nowrap;
+    margin-top: 1rem;
 }
-
-.footer-links a:hover {
-    color: #ffd700;
-}
-
-
 
 /* Desktop: links em linha (horizontal) */
 @media (min-width: 992px) {

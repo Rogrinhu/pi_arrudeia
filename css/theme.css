@@ -93,7 +93,8 @@
 
 [data-theme="dark"] .footer-links a { color: #9fb7e6 !important; }
 
-[data-theme="dark"] .card-fav { background: rgba(255,255,255,0.03) !important; color: var(--text-light) !important; }
+/* [data-theme="dark"] .card-fav { background: var(--heart) !important; color: white !important; }
+[data-theme="dark"] .card-fav:hover { background: var(--heart) !important; color: var(--heart) !important; } */
 
 /* Nav links keep white on dark */
 [data-theme="dark"] .nav-link { color: white !important; }

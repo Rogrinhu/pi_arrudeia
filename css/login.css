@@ -54,6 +54,9 @@ body {
     background-color: var(--bg-body);
     color: var(--text-primary);
     line-height: 1.6;
+    font-family: 'Spline Sans Mono', monospace;
+    font-optical-sizing: auto;   /* deixa mais bonito em tamanhos diferentes */
+    font-style: normal;
 }
 
 .container {
@@ -258,60 +261,69 @@ button:hover {
     color: var(--btn-reverse);
 }
 
-/* =============================== */
-/* FOOTER */
-/* =============================== */
-
+/* Footer */
 .footer {
-    background: var(--primary);
-    color: var(--text-primary);
-    padding: 2rem 0 1rem;
+  background: var(--primary);
+  color: white;
+  padding: 2rem 0 1rem;
 }
 
-/* Logo no footer */
 .footer-logo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .footer-logo-img {
     height: 100px;
     margin-bottom: 1rem;
 }
+.footer-patrocinadores {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.footer-patrocinadores-senac{
+  height: 60px;
+  margin: 0 15px;
+}
+.footer-patrocinadores-serasa-experian{
+  height: 60px;
+  margin: 0 15px;
+}
+.footer-patrocinadores-gerando-falcoes{
+  height: 40px;
+  margin: 0 15px;
+}
 
 /* Ícones de redes sociais */
 .social {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .social img {
-    width: 28px;
-    height: 28px;
-    filter: brightness(0) invert(1);
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
 }
 
 /* Links do rodapé */
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    font-size: 0.9rem;
-    margin-top: 1.5rem;
-    padding: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
 }
 
-.footer-links a {
-    color: #bbd4f7;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    white-space: nowrap;
-}
-
-.footer-links a:hover {
-    color: #ffd700;
+.footer-links p {
+  color: #bbd4f7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  margin-top: 1rem; 
 }
 
 /* =============================== */
